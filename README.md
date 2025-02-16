@@ -55,3 +55,7 @@ O projeto é composto pelas seguintes classes principais:
 - **Funcoes**: Compõe todas as funções necessários para a execução do código.
 - **LinhaDeOnibus**: Gerencia os dados das linhas, incluindo cidades, horários e valor da passagem.
 - **Onibus**: Representa os ônibus, com controle de datas de partida e assentos disponíveis.
+
+## Diagrama de Classes
+
+![image](https://github.com/user-attachments/assets/e1a00d55-8a8f-42be-abd0-5f0172429637)
