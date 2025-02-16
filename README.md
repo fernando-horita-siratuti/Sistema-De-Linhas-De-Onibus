@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-Este projeto simula o controle de assentos disponíveis em ônibus de uma empresa de transporte rodoviário de passageiros. O sistema permite gerenciar linhas de ônibus, verificar disponibilidade de assentos, realizar reservas e gerar relatórios financeiros e de ocupação.
+Este projeto simula o controle de linhas de ônibus de uma empresa de transporte rodoviário de passageiros. O sistema permite gerenciar linhas de ônibus, verificar disponibilidade de assentos, realizar reservas e gerar relatórios financeiros e de ocupação.
 
 As principais funcionalidades incluem:
 - Cadastro e gerenciamento de linhas de ônibus.
@@ -31,11 +31,11 @@ As principais funcionalidades incluem:
 ### Reservar Assentos
 - Após consultar a disponibilidade, é possível reservar assentos específicos.
 - As reservas só podem ser realizadas para ônibus que ainda não partiram.
-- Assentos disponíveis variam de 1 a 20, sendo os ímpares nas janelas.
+- Assentos disponíveis variam de 1 a 20, sendo os ímpares nas janelas e os pares no corredor.
 
 ### Geração de Relatórios
 - Total arrecadado com venda de passagens no mês corrente para cada linha.
-- Ocupação percentual média de cada linha em cada dia da semana (representado por uma matriz).
+- Ocupação percentual média de cada linha em cada dia da semana (representada por uma matriz).
 
 ### Manipulação de Arquivos
 - Permite ler reservas de um arquivo texto no seguinte formato:
@@ -51,19 +51,7 @@ As principais funcionalidades incluem:
 
 O projeto é composto pelas seguintes classes principais:
 
-- **MainTransporte**: Responsável pela execução do programa e apresentação do menu de opções.
-- **LinhaTransporte**: Gerencia os dados das linhas, incluindo cidades, horários e valor da passagem.
-- **OnibusTransporte**: Representa os ônibus, com controle de datas de partida e assentos disponíveis.
-- **ReservaTransporte**: Gerencia as reservas realizadas, incluindo a verificação de disponibilidade.
-- **RelatorioTransporte**: Gera os relatórios de arrecadação e ocupação média.
-- **ArquivoTransporte**: Manipula leitura e gravação de reservas em arquivos texto.
-
----
-
-## Regras e Restrições
-
-- Cada linha deve ter um conjunto de horários diários de partida.
-- Assentos disponíveis variam de 1 a 20, sendo os ímpares nas janelas.
-- A data da viagem deve ser inferior a 30 dias, contados a partir da data atual.
-- Nenhuma passagem pode ser comercializada para ônibus que já partiram (consultando o relógio do sistema).
-- Reservas lidas de arquivo são processadas sequencialmente, e as não realizadas são registradas com o motivo.
+- **Main**: Responsável pela execução do programa e apresentação do menu de opções.
+- **Funcoes**: Compõe todas as funções necessários para a execução do código.
+- **LinhaDeOnibus**: Gerencia os dados das linhas, incluindo cidades, horários e valor da passagem.
+- **Onibus**: Representa os ônibus, com controle de datas de partida e assentos disponíveis.
