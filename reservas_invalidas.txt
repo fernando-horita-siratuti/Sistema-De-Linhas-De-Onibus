@@ -1,0 +1,4 @@
+Rio de Janeiro, 12:00, 21/02/2025, 1, Assento ocupado
+Rio de Janeiro, 12:00, 22/02/2025, 21, Assento ocupado
+Rio de Janeiro, 25:00, 22/02/2025, 4, Formato de data/horário inválido
+Rio de Fevereiro, 12:00, 22/02/2025, 4, Linha não encontrada
